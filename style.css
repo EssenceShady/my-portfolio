@@ -1,0 +1,530 @@
+/* ================================================= */
+/* General Body and Typography */
+/* ================================================= */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* ================================================= */
+/* Header and Navigation */
+/* ================================================= */
+header {
+    background-color: #fff;
+    padding: 1em 2em;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+header li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    transition: color 0.3s ease;
+}
+
+header li a:hover {
+    color: #0056b3;
+}
+
+/* ================================================= */
+/* Index Page Styles */
+/* ================================================= */
+.hero {
+    text-align: center;
+    padding: 6em 2em;
+    background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 86, 179, 0.8)), url('./images/background.jpg') no-repeat center center/cover;
+    color: #fff;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero button {
+    background-color: #ffc107;
+    color: #333;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hero button:hover {
+    background-color: #e0a800;
+    transform: translateY(-3px);
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2em;
+    padding: 4em 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 400px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+    flex: 2;
+}
+
+.about-content h2 {
+    color: #007BFF;
+}
+
+/* ================================================= */
+/* About Page Specific Styles */
+/* ================================================= */
+.about-header {
+    text-align: center;
+    padding: 3em 1em 1em;
+    background-color: #fff;
+    border-bottom: 2px solid #007BFF;
+    margin-bottom: 3em;
+}
+
+.about-header h2 {
+    font-size: 3.5em;
+    color: #007BFF;
+    margin: 0;
+}
+
+.about-page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.about-page-content .about-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4em;
+    align-items: flex-start;
+}
+
+.about-text {
+    flex: 2;
+    max-width: 700px;
+}
+
+.about-text h3 {
+    font-size: 1.8em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #555;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    padding-left: 2em;
+    position: relative;
+    margin-bottom: 1em;
+    line-height: 1.4;
+    font-size: 1.1em;
+}
+
+.about-text ul li::before {
+    content: '★';
+    color: #ffc107;
+    position: absolute;
+    left: 0;
+    font-size: 1.2em;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.03);
+}
+
+/* ================================================= */
+/* Skills and Technologies Pages */
+/* ================================================= */
+.skills-page,
+.technologies-page {
+    padding: 5em 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skills-header,
+.technologies-header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.skills-header h2,
+.technologies-header h2 {
+    font-size: 3.5em;
+    color: #007BFF;
+    border-bottom: 3px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.skills-header p,
+.technologies-header p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-container,
+.technologies-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.skill-category,
+.technology-category {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover,
+.technology-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.skill-category h3,
+.technology-category h3 {
+    color: #333;
+    font-size: 1.5em;
+    border-bottom: 2px solid #f4f4f4;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+}
+
+.skill-category ul,
+.technology-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category ul li,
+.technology-category ul li {
+    background-color: #f9f9f9;
+    padding: 0.75em 1em;
+    border-left: 3px solid #007BFF;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.skill-category ul li:hover,
+.technology-category ul li:hover {
+    background-color: #e9ecef;
+}
+
+/* ================================================= */
+/* Portfolio Page Specific Styles */
+/* ================================================= */
+.portfolio-header {
+    text-align: center;
+    padding: 3em 1em 1em;
+    background-color: #fff;
+    border-bottom: 2px solid #007BFF;
+    margin-bottom: 3em;
+}
+
+.portfolio-header h2 {
+    font-size: 3.5em;
+    color: #007BFF;
+    margin: 0;
+}
+
+.portfolio-header p {
+    font-size: 1.2em;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3em;
+    padding: 0 2em;
+    max-width: 1200px;
+    margin: 0 auto 5em;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.project-details {
+    padding: 1.5em;
+}
+
+.project-details h3 {
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.project-description {
+    color: #555;
+    font-size: 1em;
+}
+
+.technologies-used {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 1em;
+}
+
+.project-links {
+    display: flex;
+    gap: 1em;
+    margin-top: 1.5em;
+}
+
+.project-links a {
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.live-link {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+.live-link:hover {
+    background-color: #0056b3;
+}
+
+.github-link {
+    background-color: #333;
+    color: #fff;
+}
+
+.github-link:hover {
+    background-color: #555;
+}
+
+/* ================================================= */
+/* Contact Page Specific Styles */
+/* ================================================= */
+.contact-page {
+    padding: 5em 2em;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact-header h2 {
+    font-size: 3.5em;
+    color: #007BFF;
+    border-bottom: 3px solid #007BFF;
+    display: inline-block;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.5em;
+}
+
+.contact-header p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2em;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.submit-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 1em 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1.5em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.social-links h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 0.5em 0;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.social-links ul li a:hover {
+    color: #0056b3;
+}
+
+/* ================================================= */
+/* Responsive Media Queries */
+/* ================================================= */
+
+/* General mobile adjustments */
+@media (max-width: 768px) {
+    header ul {
+        flex-wrap: wrap;
+        gap: 1em;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+    
+    .portfolio-grid,
+    .skills-container,
+    .technologies-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-page-content .about-flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
