@@ -2,4 +2,4 @@ My Professional PortfolioOverviewThis repository contains the source code for my
 
 Navigate into the project directory:cd my-portfolio
 
-Open the index.html file in your preferred web browser to view the website locally.ContactName: Shadrach Saidu Saccoh SesayEmail: Your Email Address HereThank you for visiting my portfolio!
+Open the index.html file in your preferred web browser to view the website locally.ContactName: Shadrach Saidu Saccoh SesayEmail: sesayshadrachsaidu@gmail.com Thank you for visiting my portfolio!
